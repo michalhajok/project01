@@ -1,0 +1,33 @@
+
+  .main{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+
+  }
+  .main div{
+    background-color: #f1f2f6;
+    cursor: pointer;
+    display: grid;
+    margin: 1em;
+    height: 13em;
+    width: 13em;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr
+  }
+  .main div:hover{
+    box-shadow: 0rem 0rem 1em 1em rgb(87, 86, 86) inset;
+  }
+  .main div svg{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    place-self: center;
+    height: 50px;
+    width: 50px;
+  }
+  .main div p{
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
